@@ -5,8 +5,22 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1728469678904,
-      "tag": "0000_loud_lionheart",
+      "when": 1728568551507,
+      "tag": "0000_optimal_scorpion",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1728626347613,
+      "tag": "0001_slippery_boomer",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1728632358289,
+      "tag": "0002_deep_champions",
       "breakpoints": true
     }
   ]
