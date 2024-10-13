@@ -1,6 +1,6 @@
 {
-  "id": "82dea775-3f32-42c6-a323-3073b5a6b984",
-  "prevId": "1f318a4d-5dc2-4a20-83c5-0c484d9998ef",
+  "id": "c48673e8-c6a7-4804-8b7b-c7547a0bfabf",
+  "prevId": "1c2b1fea-9b38-46cf-91ce-ea0d8989a9c0",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -44,12 +44,6 @@
           "primaryKey": false,
           "notNull": false
         },
-        "password": {
-          "name": "password",
-          "type": "varchar(255)",
-          "primaryKey": false,
-          "notNull": true
-        },
         "role": {
           "name": "role",
           "type": "varchar(12)",
@@ -74,7 +68,15 @@
       "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
-      "uniqueConstraints": {}
+      "uniqueConstraints": {
+        "Users_email_unique": {
+          "name": "Users_email_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "email"
+          ]
+        }
+      }
     },
     "public.delivary_person": {
       "name": "delivary_person",

@@ -14,9 +14,9 @@ export async function POST(request:Request,response:Response){
     const data= await request.json()
 
     console.log("data is",data)
-    
+  
     let validatedData
-
+    
     try{
 
         validatedData= await inventorySchema.parse({

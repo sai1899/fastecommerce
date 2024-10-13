@@ -7,10 +7,10 @@ import { pgTable, integer, varchar,serial, text, timestamp } from "drizzle-orm/p
 export const Users = pgTable("Users",{
     id: serial("id").primaryKey(),
     fname: varchar("fname",{length:255}).notNull(),
-    email: varchar("email",{length:255}).notNull(),
+    email: varchar("email",{length:255}).notNull().unique(),
     provider: varchar('provider',{length:20}).notNull(),
-    external_id: varchar('external_id',{length:100}).notNull(),
-    image:text('image').notNull(),
+    external_id: varchar('external_id',{length:100}),
+    image:text('image'),
     role:varchar('role',{length:12}).notNull(),
     createdAt: timestamp("created_at").default(sql`CURRENT_TIMESTAMP`),
     updatedAt: timestamp("updated_at").default(sql`CURRENT_TIMESTAMP`),

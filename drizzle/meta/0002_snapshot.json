@@ -1,6 +1,6 @@
 {
-  "id": "94ff7e7b-5ebf-4b15-ba76-5decc0e6e6fd",
-  "prevId": "286f42d3-6fc1-43d1-aade-f1f82179a032",
+  "id": "1c2b1fea-9b38-46cf-91ce-ea0d8989a9c0",
+  "prevId": "82dea775-3f32-42c6-a323-3073b5a6b984",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -36,13 +36,13 @@
           "name": "external_id",
           "type": "varchar(100)",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "image": {
           "name": "image",
           "type": "text",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "role": {
           "name": "role",
